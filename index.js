@@ -1,7 +1,7 @@
 const express = require("express");
 const inventoryRouter = require("./routes/inventoryRouter");
 const userRouter = require("./routes/userRouter");
-const port = 8000;
+const port = process.env.PORT || 8000;
 const cors = require("cors");
 const morgan = require("morgan");
 const router = express.Router();
